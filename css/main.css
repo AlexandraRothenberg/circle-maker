@@ -1,0 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+.ball {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: red;
+  border-radius: 50px;
+}
