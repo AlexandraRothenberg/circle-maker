@@ -1,12 +1,11 @@
 var $ball = $('.ball');
 
-$('div').on('keypress', function (e) {
-  var $div = $('<div>').addClass('.ball');
-  e.preventDefault();
-  $div.html('Math.random');
-});
+$('<div>').on('keydown', function (e) {
+  var newArea = Math.floor(Math.random() * (max - min)) + min;
 
-//$('#btn-down').on('click', function () {
- // var newTop = $ball.offset().top + 10;
- // $ball.css('top', newTop);
-//});
+  $ball.css('left', newArea);
+  $ball.css('top', newArea);
+  e.preventDefault();
+  $('body').html();
+  $('html').append($ball);
+});
